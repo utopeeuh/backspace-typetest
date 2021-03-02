@@ -1,0 +1,23 @@
+body {
+  background-color: rgb(19, 19, 19);
+}
+
+body,
+#retry {
+  color: #dadcdf;
+}
+
+#bigstats,
+#typeMode,
+.pages {
+  color: #ff4d7b;
+}
+
+#retry {
+  background: #ff4d7b;
+}
+
+#txt {
+  color: rgb(19, 19, 19);
+  background: #dadcdf;
+}

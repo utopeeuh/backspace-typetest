@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Back___</title>
+    <meta
+      name="description"
+      content="Minimalistic and lightweight typing test."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link id="theme" rel="stylesheet" href="./themes/dark.css" />
+  </head>
+  <body>
+    <div class="top">
+      <span id="stats">WPM / ACC</span>
+      <span id="typeMode">Type</span>
+      <br />
+    </div>
+    <div class="modes">
+      <span id="word-15" onclick="setWordCount(15)">15</span>
+      <span id="word-30" onclick="setWordCount(30)">30</span>
+      <span id="word-50" onclick="setWordCount(50)">50</span>
+      <span id="word-100" onclick="setWordCount(100)">100</span>
+      <span id="word-200" onclick="setWordCount(200)">200</span>
+    </div>
+    <div class="stats-left">
+      <span id="bigstats">XX / XX</span>
+      <span id="percent">%</span>
+    </div>
+    <div id="txtdisplay">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nec
+      maximus est, sed efficitur ante. Aenean sem tortor, hendrerit pulvinar
+      accumsan vel, fermentum sit amet leo. Cras nec sodales orci, in laoreet
+      nunc. Phasellus fermentum, urna vel pretium varius, nulla diam volutpat
+      urna, sit amet varius quam mauris ac magna.
+    </div>
+    <div>
+      <label
+        for="wordIn"
+        spellcheck="false"
+        autocomplete="off"
+        autocorrect="off"
+        autocapitalize="off"
+      ></label>
+      <input type="text" id="txt" name="wordIn" tabindex="1" />
+      <!-- <span id="txt">TEXT BOX</span> -->
+      <button id="retry" tabindex="2">Retry</button>
+    </div>
+    <div class="pages">
+      <a href="Record.html" id="record-page" target="_blank" tabindex="3">
+        Records
+      </a>
+      <br />
+      <a href="Theme.html" id="theme-page" target="_blank" tabindex="4">
+        Theme
+      </a>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
