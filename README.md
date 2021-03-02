@@ -5,7 +5,6 @@ Personal project, created while learning the basics of HTML, CSS and Node.js
 *(not final)*
 ![Screenshot_1](https://user-images.githubusercontent.com/75376567/109612907-01605000-7b63-11eb-9d98-916770a431da.png)
 
-![Back___ Home Page](tinyurl.com/backspaceHome)
 ## Languages available:
 - english
 - italian
