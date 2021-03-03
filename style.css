@@ -40,8 +40,8 @@ body {
   margin-top: 6rem;
   text-align: left;
   font-size: 20px;
-  border-radius: 1rem;
   border: 15px;
+  overflow: hidden;
 }
 
 #txt {
