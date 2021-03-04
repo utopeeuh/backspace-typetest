@@ -29,24 +29,26 @@
       <span id="bigstats">XX / XX</span>
       <span id="percent">%</span>
     </div>
-    <div id="txtdisplay">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nec
-      maximus est, sed efficitur ante. Aenean sem tortor, hendrerit pulvinar
-      accumsan vel, fermentum sit amet leo. Cras nec sodales orci, in laoreet
-      nunc. Phasellus fermentum, urna vel pretium varius, nulla diam volutpat
-      urna, sit amet varius quam mauris ac magna.
-    </div>
+    <div id="txtdisplay"></div>
     <div>
-      <label
-        for="wordIn"
+      <input
+        type="text"
+        id="txt"
         spellcheck="false"
         autocomplete="off"
         autocorrect="off"
         autocapitalize="off"
-      ></label>
-      <input type="text" id="txt" name="wordIn" tabindex="1" />
-      <!-- <span id="txt">TEXT BOX</span> -->
-      <button id="retry" tabindex="2">Retry</button>
+        tabindex="1"
+      />
+      <a href="#txt">
+        <button
+          id="retry"
+          onclick="setWordCount(getCookie('wordCount'))"
+          tabindex="2"
+        >
+          Retry
+        </button>
+      </a>
     </div>
     <div class="pages">
       <a href="Record.html" id="record-page" target="_blank" tabindex="3">
@@ -54,7 +56,11 @@
       </a>
       <br />
       <a href="Theme.html" id="theme-page" target="_blank" tabindex="4">
-        Theme
+        Themes
+      </a>
+      <br />
+      <a href="Languages.html" id="lang-page" target="_blank" tabindex="5">
+        Languages
       </a>
     </div>
     <script src="main.js"></script>
