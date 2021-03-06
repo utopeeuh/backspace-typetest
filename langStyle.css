@@ -1,0 +1,80 @@
+body {
+	margin: 2rem 15rem !important;
+}
+
+.block {
+	height: 100px;
+	width: 100px;
+	margin: 10px;
+	border-radius: 100%;
+}
+
+.table {
+	height: 300px;
+	width: 60%;
+	margin: 10px auto;
+}
+
+#pages {
+	margin: 2rem auto !important;
+}
+
+#subsubhead {
+	font-size: 20px;
+}
+
+.eng {
+	background: -webkit-linear-gradient(0, black 0%, rgba(0, 0, 0, 0) 0%),
+		url("https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/1200px-Flag_of_the_United_States.svg.png");
+	background-size: cover;
+}
+
+.ind {
+	background: -webkit-linear-gradient(0, black 0%, rgba(0, 0, 0, 0) 0%),
+		url("https://cdn.britannica.com/48/1648-004-A33B72D8/Flag-Indonesia.jpg");
+	background-size: cover;
+}
+
+.kor {
+	background: -webkit-linear-gradient(0, black 0%, rgba(0, 0, 0, 0) 0%),
+		url("https://image.freepik.com/free-vector/illustration-south-korea-flag_53876-27132.jpg");
+	background-size: 140%;
+	background-position: 50% 50%;
+}
+
+.chi {
+	background: -webkit-linear-gradient(0, black 0%, rgba(0, 0, 0, 0) 0%),
+		url("https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/1200px-Flag_of_the_People%27s_Republic_of_China.svg.png");
+	background-size: cover;
+	background-position: 0% 50%;
+}
+
+.fre {
+	background: -webkit-linear-gradient(0, black 0%, rgba(0, 0, 0, 0) 0%),
+		url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931958%29.svg/250px-Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931958%29.svg.png");
+	background-size: 100%;
+}
+
+.ger {
+	background: -webkit-linear-gradient(0, black 0%, rgba(0, 0, 0, 0) 0%),
+		url("https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg");
+	background-size: cover;
+}
+
+.ita {
+	background: -webkit-linear-gradient(0, black 0%, rgba(0, 0, 0, 0) 0%),
+		url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAG1BMVEXPKzb///8AkkcBkkoAkDxaroH+/v/SlpnOGioAALhcAAABAUlEQVR4nO3QSQ0AIAwAsI1r+FeMij1IWgmN0WWunV1O1o0+Tpw4ceLEiRMnTpw4ceLEiRMnTpw4ceLEiRMnTpw4ceLEiRMnTpw4ceLEiRMnTpw4ceLEiRMnTpw4ceLEiRMnTpw4ceLEiRMnTpw4ceLEiRMnTpw4ceLEiRMnTpw4ceLEiRMnTpw4ceLEiRMnTpw4ceLEiRMnTpw4ceLEiRMnTpw4ceLEiRMnTpw4ceLEiRMnTpw4ceLEiRMnTpw4ceLEiRMnTpw4ceLEiRMnTpw4ceLEiRMnTpw4ceLEiRMnTpw4ceLEiRMnTpw4ceLEiRMnTpw4ceLEiRMnTpx8ePIA2tzXLBAXZL0AAAAASUVORK5CYII=");
+	background-size: 100%;
+}
+
+.spa {
+	background: -webkit-linear-gradient(0, black 0%, rgba(0, 0, 0, 0) 0%),
+		url("https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bandera_de_Espa%C3%B1a.svg/1200px-Bandera_de_Espa%C3%B1a.svg.png");
+	background-size: cover;
+}
+
+.tag {
+	background: -webkit-linear-gradient(0, black 0%, rgba(0, 0, 0, 0) 0%),
+		url("https://i.ebayimg.com/images/g/rEEAAMXQiNdRbkJN/s-l300.jpg");
+	background-size: cover;
+}
