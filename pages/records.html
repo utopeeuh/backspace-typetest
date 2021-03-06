@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Back___ Records</title>
+		<meta name="description" content="Your personal bests in Back___" />
+		<link rel="stylesheet" href="../styles/recordStyle.css" />
+		<link rel="stylesheet" href="../style.css" />
+		<link id="theme" rel="stylesheet" href="../themes/dark.css" />
+	</head>
+	<body>
+		<div id="head">RECORDS</div>
+		<div id="subhead">Personal Bests</div>
+		<div class="table">
+			<div id="subsubhead" class="block-header">Words</div>
+			<div id="subsubhead" class="block-header">WPM</div>
+			<div id="subsubhead" class="block-header">ACC</div>
+			<div id="subsubhead" class="block-header">Date</div>
+			<div class="row-alt">
+				<span class="block">15</span>
+				<span id="15-wpm" class="block">-</span>
+				<span id="15-acc" class="block">-</span>
+				<span id="15-date" class="block">-</span>
+			</div>
+			<div>
+				<span class="block">30</span>
+				<span id="30-wpm" class="block">-</span>
+				<span id="30-acc" class="block">-</span>
+				<span id="30-date" class="block">-</span>
+			</div>
+			<div class="row-alt">
+				<span class="block">50</span>
+				<span id="50-wpm" class="block">-</span>
+				<span id="50-acc" class="block">-</span>
+				<span id="50-date" class="block">-</span>
+			</div>
+			<div>
+				<span class="block">100</span>
+				<span id="100-wpm" class="block">-</span>
+				<span id="100-acc" class="block">-</span>
+				<span id="100-date" class="block">-</span>
+			</div>
+			<div class="row-alt">
+				<span class="block">200</span>
+				<span id="200-wpm" class="block">-</span>
+				<span id="200-acc" class="block">-</span>
+				<span id="200-date" class="block">-</span>
+			</div>
+		</div>
+		<div id="pages">
+			<button
+				onclick="transitionToPage('index.html')"
+				id="home-page"
+				tabindex="3"
+			>
+				Home
+			</button>
+			<br />
+			<button
+				onclick="transitionToPage('theme.html')"
+				id="theme-page"
+				tabindex="4"
+			>
+				Themes
+			</button>
+			<br />
+			<button
+				onclick="transitionToPage('lang.html')"
+				id="lang-page"
+				tabindex="5"
+			>
+				Languages
+			</button>
+		</div>
+		<script src="../sources/records.js"></script>
+		<script src="../sources/transition.js"></script>
+	</body>
+</html>

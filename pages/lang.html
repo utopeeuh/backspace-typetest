@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Back___ Records</title>
+		<meta name="description" content="Your personal bests in Back___" />
+		<link rel="stylesheet" href="../styles/langStyle.css" />
+		<link rel="stylesheet" href="../style.css" />
+		<link id="theme" rel="stylesheet" href="../themes/dark.css" />
+	</head>
+	<body>
+		<div id="head">LANGUAGES</div>
+		<div id="subhead">What do you speak?</div>
+		<span id="subsubhead">Current language:</span>
+		<span id="subsubhead" class="currLang"></span>
+		<div class="table">
+			<button class="block eng" onclick="setLang('English')"></button>
+			<button class="block ind" onclick="setLang('Indonesian')"></button>
+			<button class="block kor" onclick="setLang('Korean')"></button>
+			<button class="block chi" onclick="setLang('Chinese')"></button>
+			<button class="block fre" onclick="setLang('French')"></button>
+
+			<button class="block ger" onclick="setLang('German')"></button>
+			<button class="block ita" onclick="setLang('Italian')"></button>
+			<button class="block spa" onclick="setLang('Spanish')"></button>
+			<button class="block tag" onclick="setLang('Tagalog')"></button>
+		</div>
+
+		<div id="pages">
+			<button
+				onclick="transitionToPage('index.html')"
+				id="record-page"
+				tabindex="3"
+			>
+				Home
+			</button>
+			<br />
+			<button
+				onclick="transitionToPage('theme.html')"
+				id="theme-page"
+				tabindex="4"
+			>
+				Themes
+			</button>
+			<br />
+			<button
+				onclick="transitionToPage('records.html')"
+				id="record-page"
+				tabindex="5"
+			>
+				Records
+			</button>
+		</div>
+		<script src="../sources/lang.js"></script>
+		<script src="../sources/transition.js"></script>
+	</body>
+</html>
