@@ -3,7 +3,7 @@ A minimalistic typing test. A work in progress
 Personal project, created while learning the basics of HTML, CSS and Node.js
 
 *(not final)*
-![Screenshot_1](https://user-images.githubusercontent.com/75376567/109612907-01605000-7b63-11eb-9d98-916770a431da.png)
+![home page](https://user-images.githubusercontent.com/75376567/110196939-97092180-7e7a-11eb-8b8b-1189fc02206d.png)
 
 ## Languages available:
 - english
