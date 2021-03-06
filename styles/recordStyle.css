@@ -1,0 +1,33 @@
+* {
+	font-family: Consolas;
+	vertical-align: middle;
+}
+
+body {
+	font-size: 20px;
+	margin: auto 15rem;
+	text-align: center;
+}
+
+.table {
+	height: 300px;
+	width: 70%;
+	margin: 10px auto;
+}
+
+.block-header {
+	height: 8%;
+	width: 100px;
+	margin: 10px;
+	display: inline-block;
+}
+
+.block {
+	height: 100%;
+	width: 100px;
+	margin: 10px;
+}
+
+#pages {
+	margin-top: 2rem !important;
+}
