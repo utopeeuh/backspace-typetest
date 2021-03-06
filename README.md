@@ -12,11 +12,7 @@ Personal project, created while learning the basics of HTML, CSS and Node.js
 - spanish
 - chinese
 - korean
-- polish
-- swedish
-- punjabi
 - french
-- portuguese
 
 ## Initial Features:
 Initially, the typing test will only be capable of displaying a set number of words (15/30/50/100/200).
