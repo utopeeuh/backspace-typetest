@@ -1,23 +1,49 @@
 body {
-  background-color: rgb(19, 19, 19);
+	background-color: #191919;
+}
+
+#head,
+#retry {
+	color: #141414;
+}
+
+.row-alt {
+	background-color: rgb(20, 20, 20);
 }
 
 body,
-#retry {
-  color: #dadcdf;
+button,
+#retry,
+.clear,
+#txt,
+.pages,
+#subhead {
+	color: #c2c3c5;
 }
 
-#bigstats,
 #typeMode,
-.pages {
-  color: #ff4d7b;
+#subsubhead,
+#bigstats,
+.highlight {
+	color: #f24977;
 }
 
 #retry {
-  background: #ff4d7b;
+	background: #f24977;
 }
 
-#txt {
-  color: rgb(19, 19, 19);
-  background: #dadcdf;
+.selected {
+	border: 3px solid #f24977;
+}
+
+.wrongfield {
+	border-bottom: 2px solid #ff4343 !important;
+}
+
+.wrong {
+	color: #c44545;
+}
+
+.correct {
+	color: #9cff11;
 }
