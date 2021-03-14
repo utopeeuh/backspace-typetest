@@ -14,16 +14,8 @@ Personal project, created while learning the basics of HTML, CSS and Node.js
 - korean
 - french
 
-## Initial Features:
-Initially, the typing test will only be capable of displaying a set number of words (15/30/50/100/200).
-
 ## Planned Features:
-### Theme editor & Theme Page
-You''ll be able to create one single custome theme, using a color pickers. Or switch to a pre-made light theme.
-### Records
-Will record personal bests (WPM + ACC) for all typing modes.
+### Theme editor
+You''ll be able to create one single custome theme, using a color pickers.
 ### Timer
 Typing test will run for a set time.
-### Additional Languages
-- Indonesian
-- Thai
