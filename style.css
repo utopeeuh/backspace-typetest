@@ -21,7 +21,8 @@ button:hover {
 	box-shadow: inset 0 0 100px 100px rgb(255, 255, 255, 0.2);
 }
 
-button:active {
+button:active,
+::-webkit-scrollbar-thumb:hover {
 	box-shadow: inset 0 0 100px 100px rgb(0, 0, 0, 0.2);
 }
 
@@ -86,7 +87,7 @@ button:focus {
 
 #pages {
 	width: fit-content;
-	margin: 5rem auto;
+	margin: 3rem auto;
 	text-align: center;
 	font-size: 15px;
 }
@@ -123,4 +124,45 @@ button:focus {
 
 #subsubhead {
 	margin-bottom: 1rem;
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	box-shadow: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	border-radius: 3px;
+}
+
+#volume-control {
+	-webkit-appearance: none; /* Override default CSS styles */
+	margin-top: 3rem;
+	appearance: none;
+	height: 0.5rem;
+	outline: none; /* Remove outline */
+	opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+	-webkit-transition: 0.2s; /* 0.2 seconds transition on hover */
+	border-radius: 0.5rem;
+	transition: opacity 0.2s;
+}
+
+/* Mouse-over effects */
+#volume-control:hover {
+	opacity: 1; /* Fully shown on mouse-over */
+}
+
+#volume-control::-webkit-slider-thumb {
+	-webkit-appearance: none; /* Override default look */
+	appearance: none;
+	border-radius: 0.7rem;
+	width: 0.7rem; /* Set a specific slider handle width */
+	height: 0.7rem; /* Slider handle height */
+	cursor: pointer;
 }
