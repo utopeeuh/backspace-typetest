@@ -14,6 +14,9 @@ let correctKeys = 0;
 let startDate = 0;
 let lang;
 
+
+let volume = document.getElementById("volume-control");
+
 getCookie('wordCount') === '' ? setWordCount(50) : setWordCount(getCookie('wordCount'));
 getCookie('lang') === '' ? lang = 'English' : lang = getCookie('lang');
 
@@ -67,6 +70,10 @@ function showText() {
     child.classList.add("highlight");
 }
 
+function playSound(){
+  let audio = document.getElementById("audio");
+  audio.play();
+}
 //---------------------------------------------------------------------------------------
 
 //Inputting text
@@ -74,6 +81,7 @@ inputField.addEventListener('keydown', e => {
 	if (currentWord < wordList.length) inputFieldClass();
 	
 	function inputFieldClass() {
+    playSound();
 
     if (e.key === ' ' && inputField.value.length === 0){
       inputField.value='';
@@ -96,8 +104,6 @@ inputField.addEventListener('keydown', e => {
 			inputField.className = "clear"; 
 		}
 	}
-
-  inputField.className = e.getModifierState("CapsLock") ? "clear" : "wrongfield";
 
   if (currentWord === 0 && inputField.value === ''){
     startDate = Date.now();
@@ -133,6 +139,7 @@ inputField.addEventListener('keydown', e => {
       inputField.value = '';
       currentWord++;
     }
+
   }
   // Else if it is the last word and input word is correct show the result
   else if (currentWord === wordList.length - 1) {
@@ -140,10 +147,18 @@ inputField.addEventListener('keydown', e => {
       textDisplay.childNodes[currentWord].classList.add('correct');
       correctKeys += wordList[currentWord].length;
       currentWord++;
+
       showResult();
     }
   }
+  
 });
+
+
+// Audio slider
+volume.addEventListener("change", function(e) {
+  audio.volume = e.currentTarget.value / 100;
+})
 
 //---------------------------------------------------------------------------------------
 function showResult() {
@@ -156,6 +171,7 @@ function showResult() {
    
   let wpm = Math.floor(words / minute);
   document.querySelector('#bigstats').innerHTML = `${wpm} / ${acc} %`;
+
   setRecord(wpm, acc);
 
 }
@@ -163,11 +179,12 @@ function showResult() {
 function setRecord(wpm, acc){
   var wc = wordCount;
   var score = wpm*acc;
-  var currWPM = parseInt(getCookie(wc+"-wpm"));
-  var currACC = parseInt(getCookie(wc+"-acc"));
+  var currWPM = getCookie(wc+"-wpm");
+  var currACC = getCookie(wc+"-acc");
   var currRecord = currWPM*currACC;
+  console.log(wc);
 
-  if(currRecord === ''){
+  if(currRecord === null){
     currRecord = 0;
   }
 
