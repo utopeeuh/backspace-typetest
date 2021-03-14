@@ -8,15 +8,11 @@ setBorder();
 function setBorder(){
   var langName = currLang[0].innerHTML.substring(0, 3);
   langName = langName.toLowerCase();
-  
   circleBorder = document.getElementsByClassName(langName);
-  
   circleBorder[0].classList.add("selected");
 }
 
 function setLang(langChoice){
-
-    // ADD BORDER WHEN SELECTED //
     circleBorder[0].classList.remove("selected");
     setCookie('lang',langChoice,90);
     currLang[0].innerHTML = getCookie("lang"); 

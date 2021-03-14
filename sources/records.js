@@ -1,4 +1,5 @@
 var types = ["15","30", "50", "100", "200"];
+
 types.forEach( e=>{
     var wpmRecord = document.getElementById(`${e}-wpm`);
     var accRecord = document.getElementById(`${e}-acc`);
