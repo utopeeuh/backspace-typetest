@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Back___ Theme</title>
+		<meta name="description" content="Personalize your theme" />
+		<link rel="stylesheet" href="../styles/themeStyle.css" />
+		<link rel="stylesheet" href="../style.css" />
+		<link id="theme" rel="stylesheet" href="./themes/dark.css" />
+	</head>
+	<body>
+		<div id="head">THEMES</div>
+		<div id="subhead">Pick your poison:</div>
+		<span id="subsubhead" class="currLang"></span>
+		<div class="table">
+			<div>
+				<button class="block dark" onclick="setTheme('dark')"></button>
+				<button
+					class="block light"
+					onclick="setTheme('light')"
+				></button>
+				<button class="block none" onclick="setNone()"></button>
+			</div>
+			<div>
+				<span class="block text">Dark</span>
+				<span class="block text">Light</span>
+				<span class="block text">None</span>
+			</div>
+		</div>
+		<div id="pages">
+			<button
+				onclick="transitionToPage('index.html')"
+				id="home-page"
+				tabindex="3"
+			>
+				Home
+			</button>
+			<br />
+			<button
+				onclick="transitionToPage('records.html')"
+				id="record-page"
+				tabindex="5"
+			>
+				Records
+			</button>
+			<br />
+			<button
+				onclick="transitionToPage('lang.html')"
+				id="lang-page"
+				tabindex="4"
+			>
+				Languages
+			</button>
+		</div>
+		<script src="../sources/theme.js"></script>
+		<script src="../transition.js"></script>
+	</body>
+</html>
+
+<!-- 
+colors needed:
+
+- background
+- main
+- text
+- right
+- wrong -->

@@ -10,7 +10,7 @@
 			content="Minimalistic and lightweight typing test."
 		/>
 		<link rel="stylesheet" href="../style.css" />
-		<link id="theme" rel="stylesheet" href="../themes/dark.css" />
+		<link id="theme" rel="stylesheet" href="./themes/dark.css" />
 	</head>
 	<body>
 		<div class="top">
@@ -49,6 +49,8 @@
 					Retry
 				</button>
 			</a>
+			<br />
+			<input type="range" id="volume-control" />
 		</div>
 		<div id="pages">
 			<button
@@ -76,6 +78,7 @@
 			</button>
 		</div>
 		<script src="../main.js"></script>
-		<script src="../sources/transition.js"></script>
+		<script src="../transition.js"></script>
+		<audio id="audio" src="../sounds/typeSound.mp3"></audio>
 	</body>
 </html>
