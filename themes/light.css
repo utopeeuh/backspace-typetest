@@ -1,0 +1,48 @@
+body {
+	background-color: rgb(230, 230, 230);
+}
+
+.row-alt,
+#volume-control {
+	background-color: rgb(200, 200, 200);
+}
+
+body,
+button,
+#retry,
+.clear,
+#txt,
+.pages,
+#subhead {
+	color: #1a1a1a;
+}
+
+#typeMode,
+#subsubhead,
+#bigstats,
+.highlight,
+#head {
+	color: #c52d2d;
+}
+
+#retry,
+::-webkit-scrollbar-thumb,
+#volume-control::-webkit-slider-thumb {
+	background: #c52d2d;
+}
+
+.selected {
+	border: 3px solid #c52d2d;
+}
+
+.wrongfield {
+	border-bottom: 2px solid #8b0000 !important;
+}
+
+.wrong {
+	color: #8b0000;
+}
+
+.correct {
+	color: #589700;
+}
