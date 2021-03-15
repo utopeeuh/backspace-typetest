@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Back___</title>
+		<meta
+			name="description"
+			content="Minimalistic and lightweight typing test."
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<link id="theme" rel="stylesheet" href="/themes/dark.css" />
+	</head>
+	<body>
+		<div class="top">
+			<span id="stats">WPM / ACC</span>
+			<span id="typeMode">Type</span>
+			<br />
+		</div>
+		<div class="modes" href="#txt">
+			<span id="word-15" onclick="setWordCount(15)">15</span>
+			<span id="word-30" onclick="setWordCount(30)">30</span>
+			<span id="word-50" onclick="setWordCount(50)">50</span>
+			<span id="word-100" onclick="setWordCount(100)">100</span>
+			<span id="word-200" onclick="setWordCount(200)">200</span>
+		</div>
+		<div class="stats-left">
+			<span id="bigstats">null</span>
+		</div>
+		<div id="txtdisplay"></div>
+		<div>
+			<input
+				type="text"
+				id="txt"
+				spellcheck="false"
+				autocomplete="off"
+				autocorrect="off"
+				autocapitalize="off"
+				tabindex="1"
+			/>
+			<a href="#txt">
+				<button
+					id="retry"
+					onclick="setWordCount(getCookie('wordCount'))"
+					tabindex="2"
+					window.scrollTo(0,0)
+				>
+					Retry
+				</button>
+			</a>
+			<br />
+			<input type="range" id="volume-control" />
+		</div>
+		<div id="pages">
+			<button
+				onclick="transitionToPage('pages/records.html')"
+				id="record-page"
+				tabindex="3"
+			>
+				Records
+			</button>
+			<br />
+			<button
+				onclick="transitionToPage('pages/theme.html')"
+				id="theme-page"
+				tabindex="4"
+			>
+				Themes
+			</button>
+			<br />
+			<button
+				onclick="transitionToPage('pages/lang.html')"
+				id="lang-page"
+				tabindex="5"
+			>
+				Languages
+			</button>
+		</div>
+		<script src="main.js"></script>
+		<script src="transition.js"></script>
+		<audio id="audio" src="/sounds/typeSound.mp3"></audio>
+	</body>
+</html>

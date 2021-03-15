@@ -4,14 +4,14 @@ setThemeTrans(theme);
 
 function setThemeTrans(_theme) {
   console.log(theme);
-  fetch(`./themes/${_theme}.css`)
+  fetch(`../themes/${_theme}.css`)
     .then(response => {
       if (response.status === 200) {
         response
           .text()
           .then(css => {
             setCookie('theme', theme, 90);
-            document.querySelector('#theme').setAttribute('href', `themes/${theme}.css`);
+            document.querySelector('#theme').setAttribute('href', `../themes/${theme}.css`);
           })
           .catch(err => console.error(err));
       } else {
