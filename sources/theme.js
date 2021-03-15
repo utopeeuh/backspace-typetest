@@ -1,36 +1,14 @@
-let sectionList = ["bgColor", "mainColor", "txtColor", "corColor", "wroColor"];
-showColor();
-
-function showColor(){
-  sectionList.forEach(e=>{
-    let currSection = document.getElementById(e);
-    currSection.setAttribute("value", getCookie(e));
-  })
-}
-
-function seeColor(section){
-  console.log("Section: " + section);
-  let sectionColor = document.getElementById(section).value;
-  console.log("Color: " + sectionColor);
-  setCookie(section, sectionColor, 90);
-}
-
-function setNone(){
-  setCookie("isNone", true, 90);
-  setCustomColor();
-}
-
 function setTheme(_newTheme) {    
   const newTheme = _newTheme.toLowerCase();
   console.log("new theme: " + newTheme);
-  fetch(`./themes/${newTheme}.css`)
+  fetch(`../themes/${newTheme}.css`)
     .then(response => {
       if (response.status === 200) {
         response
           .text()
           .then(css => {
             setCookie('theme', newTheme, 90);
-            document.querySelector('#theme').setAttribute('href', `themes/${newTheme}.css`);
+            document.querySelector('#theme').setAttribute('href', `../themes/${newTheme}.css`);
           })
           .catch(err => console.error(err));
       }else {
