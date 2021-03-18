@@ -158,6 +158,7 @@ inputField.addEventListener('keydown', e => {
 // Audio slider
 volume.addEventListener("change", function(e) {
   audio.volume = e.currentTarget.value / 100;
+  setCookie("volumeslider", audio.volume, 90);
 })
 
 //---------------------------------------------------------------------------------------
@@ -173,7 +174,6 @@ function showResult() {
   document.querySelector('#bigstats').innerHTML = `${wpm} / ${acc} %`;
 
   setRecord(wpm, acc);
-
 }
 
 function setRecord(wpm, acc){
@@ -188,8 +188,7 @@ function setRecord(wpm, acc){
     currRecord = 0;
   }
 
-  if( score > currRecord){
-    ;
+  if(score > currRecord){
     setCookie(wc+"-wpm", wpm, 90);
     setCookie(wc+"-acc", acc, 90);
     setCookie(wc+"-date", convDate(), 90);
