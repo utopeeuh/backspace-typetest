@@ -13,12 +13,14 @@ let currentWord = 0;
 let correctKeys = 0;
 let startDate = 0;
 let lang;
-
-
+let theme;
 let volume = document.getElementById("volume-control");
 
+getCookie('theme') === '' ? theme = 'dark' : theme = (getCookie('theme'));
 getCookie('wordCount') === '' ? setWordCount(50) : setWordCount(getCookie('wordCount'));
 getCookie('lang') === '' ? lang = 'English' : lang = getCookie('lang');
+
+setThemeTrans(theme);
 
 function setWordCount(wc) {
     setCookie('wordCount', wc, 90);
@@ -225,3 +227,33 @@ function getCookie(cname) {
   }
   return '';
 }
+
+function setThemeTrans(_theme) {
+  console.log(theme);
+  fetch(`themes/${_theme}.css`)
+    .then(response => {
+      if (response.status === 200) {
+        response
+          .text()
+          .then(css => {
+            setCookie('theme', theme, 90);
+            document.querySelector('#theme').setAttribute('href', `../themes/${theme}.css`);
+          })
+          .catch(err => console.error(err));
+      } else {
+        console.log(`theme ${theme} is undefine`);
+      }
+    })
+.catch(err => console.error(err));
+}
+
+window.transitionToPage = function(href) {
+    document.querySelector('body').style.opacity = 0;
+    setTimeout(function() { 
+        window.location.href = href
+    }, 200)
+}
+
+document.addEventListener('DOMContentLoaded', function(event) {
+    document.querySelector('body').style.opacity = 1
+})
