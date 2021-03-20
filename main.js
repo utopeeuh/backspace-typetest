@@ -237,7 +237,7 @@ function setThemeTrans(_theme) {
           .text()
           .then(css => {
             setCookie('theme', theme, 90);
-            document.querySelector('#theme').setAttribute('href', `../themes/${theme}.css`);
+            document.querySelector('#theme').setAttribute('href', `themes/${theme}.css`);
           })
           .catch(err => console.error(err));
       } else {
