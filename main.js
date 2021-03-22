@@ -7,6 +7,7 @@ var retryButton = document.getElementById("retry");
 let wordCount;
 
 // Initialize dynamic variables
+
 let randomWords = [];
 let wordList = [];
 let currentWord = 0;
@@ -17,8 +18,8 @@ let theme;
 let volume = document.getElementById("volume-control");
 
 getCookie('theme') === '' ? theme = 'dark' : theme = (getCookie('theme'));
-getCookie('wordCount') === '' ? setWordCount(50) : setWordCount(getCookie('wordCount'));
 getCookie('lang') === '' ? lang = 'English' : lang = getCookie('lang');
+getCookie('wordCount') === '' ? setWordCount(50) : setWordCount(getCookie('wordCount'));
 
 setThemeTrans(theme);
 
@@ -31,10 +32,11 @@ function setWordCount(wc) {
 }
 
 function getText(){
-  fetch('text.json')
+  fetch('/text.json')
   .then(response => response.json())
   .then(json => {
      randomWords = json[lang];
+     setCookie('lang', 'English', 90);
      while (textDisplay.firstChild) {
       textDisplay.removeChild(textDisplay.lastChild);
     }
@@ -53,6 +55,7 @@ function setText() {
     inputField.className = '';
 
     wordList = [];
+    console.log(randomWords);
     while (wordList.length < wordCount) {
         const randomWord = randomWords[Math.floor(Math.random() * randomWords.length)];
         if (wordList[wordList.length - 1] !== randomWord || wordList[wordList.length - 1] === undefined) {
