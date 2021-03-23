@@ -32,7 +32,7 @@ function setWordCount(wc) {
 }
 
 function getText(){
-  fetch('/text.json')
+  fetch('text.json')
   .then(response => response.json())
   .then(json => {
      randomWords = json[lang];
